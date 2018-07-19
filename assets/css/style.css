@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.jumbotron {
+    background-color: grey;
+    color: white;
+}
+
+div.card-header.search, div.card-header.article {
+    background-color: grey;
+    padding: 5px;
+    border: 1px solid lightgray;
+    padding-left: 30px;
+    color: white;
+}
+
+div.card-header.search h3 {
+    padding-left: 5px;
+}
+
+div.card {
+    background-color: #E5E5D8;
+}
+
+h5.card-header {
+    padding-left: 30px;
+}
+
+input.form-control, select.form-control {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+button.btn-success{
+    margin-left: 30px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+}
+
+button.btn-danger {
+    margin-right: 2px;
+    margin-bottom: 10px;
+}
+
+div.card-body.article {
+    padding: 30px;
+}

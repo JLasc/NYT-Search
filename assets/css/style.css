@@ -47,3 +47,15 @@ button.btn-danger {
 div.card-body.article {
     padding: 30px;
 }
+
+.article-result {
+    border: 1px solid white !important;
+    padding: 5px !important;
+    background-color: grey !important;
+    color: white !important;
+}
+
+.article-result:hover {
+    background-color: black !important;
+    opacity: 0.20%;
+}

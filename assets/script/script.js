@@ -1,16 +1,13 @@
 //Globals
 
-    // Page Hooks
-    var $searchInput = $("#search-input");
-    var $recordInput = $("#record-input");
-    var $startYear = $("#start-year-input");
-    var $endYear = $("#end-year-input");
     //Button Hooks
     var $searchBtn = $("#search-btn");
     var $clearBtn = $("#clear-btn");
 
-    function addArticle () {
- 
+
+    function clear () {
+        $("#results-article").empty();
+        $("#search-input").empty();
     }
 
     function searchNY() {
@@ -23,8 +20,7 @@
         url += '?' + $.param({
             'api-key': "44707c6f51e24148a732fcfb57bd9e6c",
             'q': q,
-            'begin_date': bd,
-            'end_date': ed
+            
         });
       
 
@@ -58,13 +54,11 @@
                 divCard.append(divHead)
                 divCard.append(divBody)
                 articleResult.append(divCard)
-                };
-             
-    
-           }
+            }
+           };
 
            resultFive = result.response.docs.length - 5;
-           resultTen = result.response.docs.length ;
+           resultTen = result.response.docs.length;
            resultFifteen = result.response.docs.length + 5;
 
            if (recordNum == 5) {
@@ -84,3 +78,6 @@
         searchNY()
     })
 
+    $(document).on("click", "#clear-btn", function() {
+        clear();
+    })

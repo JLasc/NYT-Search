@@ -20,6 +20,8 @@
         url += '?' + $.param({
             'api-key': "44707c6f51e24148a732fcfb57bd9e6c",
             'q': q,
+            'begin_date': bd,
+            'end_date': ed
             
         });
       

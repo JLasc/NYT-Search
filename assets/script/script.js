@@ -1,6 +1,6 @@
 //Globals
 
-    //Button Hooks
+    //Button Hooks 
     var $searchBtn = $("#search-btn");
     var $clearBtn = $("#clear-btn");
 
